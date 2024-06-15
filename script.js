@@ -25,11 +25,9 @@ function addEmployee() {
   $('#name').val('');
   $('#surname').val('');
   $('#email').val('');
+  $('#form-data').addClass('d-none');
 }
-
-$('.employee-data').click(change);
-
-function change(event) {
+$(document).on('click', '.employee-data', function (e) {
   var newValue = prompt('Izmena:');
-  $(event.target).text(newValue);
-}
+  $(this).text(newValue);
+});
