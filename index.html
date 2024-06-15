@@ -44,10 +44,56 @@
             </tr>
           </tbody>
         </table>
-        <div class="container p-0">
-          <button type="button" class="btn btn-secondary ">
-            Dodaj novog zaposlenog
-          </button>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="button-add-employee">
+              <button type="button" class="btn btn-secondary">
+                Dodaj novog zaposlenog
+              </button>
+            </div>
+          </div>
+          <div class="col d-none">
+            <div class="input-form">
+              <form>
+                <div class="form-group">
+                  <label for="name">Ime</label>
+                  <input
+                    type="text"
+                    class="form-control mb-3 mt-2"
+                    id="name"
+                    placeholder="Upisite ime zaposlenog"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="surname">Prezime</label>
+                  <input
+                    type="text"
+                    class="form-control mb-3 mt-2"
+                    id="surname"
+                    placeholder="Upisite prezime zaposlenog"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">E-mail</label>
+                  <input
+                    type="email"
+                    class="form-control mb-3 mt-2"
+                    id="email"
+                    placeholder="Upisite e-mail zaposlenog"
+                  />
+                </div>
+                <div class="form-group row">
+                  <div class="col">
+                    <button type="submit" class="btn btn-secondary">
+                      Zavrsi
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
