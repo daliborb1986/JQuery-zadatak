@@ -28,19 +28,25 @@
               <td>Milan</td>
               <td>Milanovic</td>
               <td>mil.mal@yahoo.com</td>
-              <td class="text-center fw-bold">X</td>
+              <td class="text-center fw-bold">
+                <button class="btn fw-bold delete-data p-0">X</button>
+              </td>
             </tr>
             <tr>
               <td>Spaso</td>
               <td>Spasojevic</td>
               <td>spale@gmail.com</td>
-              <td class="text-center fw-bold">X</td>
+              <td class="text-center fw-bold">
+                <button class="btn fw-bold delete-data p-0">X</button>
+              </td>
             </tr>
             <tr>
               <td>Jovana</td>
               <td>Lukic</td>
               <td>jluk95@yahoo.com</td>
-              <td class="text-center fw-bold">X</td>
+              <td class="text-center fw-bold">
+                <button class="btn fw-bold delete-data p-0">X</button>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -49,12 +55,16 @@
         <div class="row">
           <div class="col">
             <div class="button-add-employee">
-              <button type="button" class="btn btn-secondary">
+              <button
+                type="button"
+                id="add-employee-form"
+                class="btn btn-secondary"
+              >
                 Dodaj novog zaposlenog
               </button>
             </div>
           </div>
-          <div class="col d-none">
+          <div id="form-data" class="col d-none">
             <div class="input-form">
               <form>
                 <div class="form-group">
@@ -86,7 +96,11 @@
                 </div>
                 <div class="form-group row">
                   <div class="col">
-                    <button type="submit" class="btn btn-secondary">
+                    <button
+                      type="button"
+                      id="add-employee-button"
+                      class="btn btn-secondary"
+                    >
                       Zavrsi
                     </button>
                   </div>
