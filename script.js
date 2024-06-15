@@ -1,5 +1,5 @@
-$(document).click('delete-data', function (event) {
-  $(event.target).closest('tr').remove();
+$('tbody').click('delete-data', function (event) {
+  $(event.target).parent('td').parent('tr').detach();
 });
 
 $('#add-employee-form').click(function () {
@@ -14,9 +14,9 @@ function addEmployee() {
   var email = $('#email').val();
 
   var tableData = `<tr>
-    <td>${name}</td>
-    <td>${surname}</td>
-    <td>${email}</td>
+    <td class="employee-data">${name}</td>
+    <td class="employee-data">${surname}</td>
+    <td class="employee-data">${email}</td>
     <td class="text-center fw-bold">
     <button class="btn fw-bold delete-data p-0">X</button>
     </td></tr>`;
@@ -25,4 +25,11 @@ function addEmployee() {
   $('#name').val('');
   $('#surname').val('');
   $('#email').val('');
+}
+
+$('.employee-data').click(change);
+
+function change(event) {
+  var newValue = prompt('Izmena:');
+  $(event.target).text(newValue);
 }
